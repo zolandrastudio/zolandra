@@ -6,7 +6,7 @@ import port1 from "@assets/d8229d83-b71d-4354-8c83-1ed3408b325e_1777758170821.jp
 import juicebar from "@assets/8205e6f7-32ce-46c8-b1a4-d94ba79d402b_1777758334003.jpeg";
 import salon from "@assets/24a734e8-8c82-4249-bd66-61c92c46342e_1777758668571.jpeg";
 import kiosk from "@assets/205733_1777759196987.jpeg";
-import port5 from "@assets/portfolio-5.png";
+import valentines from "@assets/4332448d-603e-4788-8671-d49138d0bde6_1777760744192.jpeg";
 import port6 from "@assets/portfolio-6.png";
 
 type Category = "Todo" | "Dormitorios" | "Salas de estar" | "Espacios pequeños" | "Comerciales";
@@ -55,10 +55,10 @@ const projects: Project[] = [
   },
   {
     id: 5,
-    title: "Sala de Piedra Funcional",
-    category: "Salas de estar",
-    image: port5,
-    description: "Sala de planta abierta con colores cálidos de piedra y mobiliario elegante y práctico.",
+    title: "Café Sweet Valentines",
+    category: "Comerciales",
+    image: valentines,
+    description: "Diseñado para transmitir calidez, dulzura y conexión. El espacio combina una estética delicada con detalles cuidadosamente seleccionados que evocan una atmósfera acogedora y romántica.",
     badge: "Render 3D"
   },
   {
