@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 
-import port1 from "@assets/portfolio-1.png";
+import port1 from "@assets/d8229d83-b71d-4354-8c83-1ed3408b325e_1777758170821.jpeg";
 import port2 from "@assets/portfolio-2.png";
 import port3 from "@assets/portfolio-3.png";
 import port4 from "@assets/portfolio-4.png";
@@ -23,10 +23,10 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "Refugio Minimalista Cálido",
-    category: "Dormitorios",
+    title: "Sala de Estar Airbnb",
+    category: "Salas de estar",
     image: port1,
-    description: "Un dormitorio sereno con cortinas de lino, tonos terrosos y abundante luz natural.",
+    description: "Ubicada en Asia, se distingue por su diseño en tonos tierra, creando una atmósfera cálida, natural y acogedora. La luz natural, potenciada por grandes ventanales, se fusiona con materiales orgánicos y texturas suaves para transmitir una sensación de calma y armonía al espacio.",
     badge: "Render 3D"
   },
   {
