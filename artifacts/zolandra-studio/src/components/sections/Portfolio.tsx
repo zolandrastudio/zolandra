@@ -7,7 +7,7 @@ import juicebar from "@assets/8205e6f7-32ce-46c8-b1a4-d94ba79d402b_1777758334003
 import salon from "@assets/24a734e8-8c82-4249-bd66-61c92c46342e_1777758668571.jpeg";
 import kiosk from "@assets/205733_1777759196987.jpeg";
 import valentines from "@assets/4332448d-603e-4788-8671-d49138d0bde6_1777760744192.jpeg";
-import port6 from "@assets/portfolio-6.png";
+import boutique from "@assets/f5734a7c-9f1b-4a31-a58c-6a19d4d834d3_1777760909097.jpeg";
 
 type Category = "Todo" | "Dormitorios" | "Salas de estar" | "Espacios pequeños" | "Comerciales";
 
@@ -63,10 +63,10 @@ const projects: Project[] = [
   },
   {
     id: 6,
-    title: "Estudio Loft Iluminado",
-    category: "Espacios pequeños",
-    image: port6,
-    description: "Un ambiente pausado con materiales táctiles y confianza tranquila para un espacio creativo.",
+    title: "Suite Boutique — Airbnb Asia",
+    category: "Dormitorios",
+    image: boutique,
+    description: "Fusiona el minimalismo cálido con acentos contemporáneos, diseñada para viajeros que buscan confort, estilo y una experiencia acogedora. El concepto resalta una paleta de tonos tierra con una pared de acento ocre de textura artesanal que aporta profundidad y calidez.",
     badge: "Render 3D"
   }
 ];
