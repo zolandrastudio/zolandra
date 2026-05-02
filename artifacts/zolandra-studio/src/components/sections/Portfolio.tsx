@@ -3,13 +3,14 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 
 import port1 from "@assets/d8229d83-b71d-4354-8c83-1ed3408b325e_1777758170821.jpeg";
+import juicebar from "@assets/8205e6f7-32ce-46c8-b1a4-d94ba79d402b_1777758334003.jpeg";
 import port2 from "@assets/portfolio-2.png";
 import port3 from "@assets/portfolio-3.png";
 import port4 from "@assets/portfolio-4.png";
 import port5 from "@assets/portfolio-5.png";
 import port6 from "@assets/portfolio-6.png";
 
-type Category = "Todo" | "Dormitorios" | "Salas de estar" | "Espacios pequeños";
+type Category = "Todo" | "Dormitorios" | "Salas de estar" | "Espacios pequeños" | "Comerciales";
 
 interface Project {
   id: number;
@@ -68,10 +69,18 @@ const projects: Project[] = [
     image: port6,
     description: "Un ambiente pausado con materiales táctiles y confianza tranquila para un espacio creativo.",
     badge: "Render 3D"
+  },
+  {
+    id: 7,
+    title: "Juguería Brunos — Perú",
+    category: "Comerciales",
+    image: juicebar,
+    description: "Se distingue por su diseño fresco y natural, donde la combinación de tonos claros, madera y vegetación crea una atmósfera limpia y acogedora.",
+    badge: "Render 3D"
   }
 ];
 
-const categories: Category[] = ["Todo", "Dormitorios", "Salas de estar", "Espacios pequeños"];
+const categories: Category[] = ["Todo", "Dormitorios", "Salas de estar", "Espacios pequeños", "Comerciales"];
 
 export default function Portfolio() {
   const [activeCategory, setActiveCategory] = useState<Category>("Todo");
