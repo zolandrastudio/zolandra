@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 
 import port1 from "@assets/d8229d83-b71d-4354-8c83-1ed3408b325e_1777758170821.jpeg";
 import juicebar from "@assets/8205e6f7-32ce-46c8-b1a4-d94ba79d402b_1777758334003.jpeg";
-import port3 from "@assets/portfolio-3.png";
+import salon from "@assets/24a734e8-8c82-4249-bd66-61c92c46342e_1777758668571.jpeg";
 import port4 from "@assets/portfolio-4.png";
 import port5 from "@assets/portfolio-5.png";
 import port6 from "@assets/portfolio-6.png";
@@ -39,10 +39,10 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    title: "Rincón Acogedor de Lectura",
-    category: "Espacios pequeños",
-    image: port3,
-    description: "Calma intencional en un espacio pequeño, con materiales naturales e iluminación pensada.",
+    title: "Salón de Belleza — Perú",
+    category: "Comerciales",
+    image: salon,
+    description: "Se distingue por su diseño elegante y contemporáneo, donde la combinación de tonos suaves, acabados en mármol y detalles en madera crea una atmósfera sofisticada y acogedora.",
     badge: "Render 3D"
   },
   {
