@@ -67,8 +67,8 @@ export default function Contact() {
             <div className="space-y-8 font-sans">
               <div>
                 <p className="text-xs uppercase tracking-widest text-muted-foreground mb-1">Correo</p>
-                <a href="mailto:hola@zolandra.studio" className="text-lg font-medium hover:text-primary transition-colors">
-                  hola@zolandra.studio
+                <a href="mailto:zolandra.studiocrativo@gmail.com" className="text-lg font-medium hover:text-primary transition-colors">
+                  zolandra.studiocrativo@gmail.com
                 </a>
               </div>
               

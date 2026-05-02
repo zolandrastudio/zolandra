@@ -60,7 +60,11 @@ export default function Footer() {
           <div>
             <h3 className="font-serif text-xl mb-6 text-background">Contacto</h3>
             <ul className="flex flex-col gap-3 text-background/70 font-sans">
-              <li>hola@zolandra.studio</li>
+              <li>
+                <a href="mailto:zolandra.studiocrativo@gmail.com" className="hover:text-primary transition-colors">
+                  zolandra.studiocrativo@gmail.com
+                </a>
+              </li>
               <li>Disponible en todo el mundo para estilismo remoto.</li>
               <li>Basada en calidez y elegancia.</li>
             </ul>
