@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import port1 from "@assets/d8229d83-b71d-4354-8c83-1ed3408b325e_1777758170821.jpeg";
 import juicebar from "@assets/8205e6f7-32ce-46c8-b1a4-d94ba79d402b_1777758334003.jpeg";
 import salon from "@assets/24a734e8-8c82-4249-bd66-61c92c46342e_1777758668571.jpeg";
-import port4 from "@assets/portfolio-4.png";
+import kiosk from "@assets/205733_1777759196987.jpeg";
 import port5 from "@assets/portfolio-5.png";
 import port6 from "@assets/portfolio-6.png";
 
@@ -47,11 +47,11 @@ const projects: Project[] = [
   },
   {
     id: 4,
-    title: "Suite Principal Serena",
-    category: "Dormitorios",
-    image: port4,
-    description: "Tonos neutros y ropa de cama suave combinados en una estética moderna y orgánica.",
-    badge: "Antes & Después"
+    title: "Kiosco de Comida Saludable — Jockey Plaza",
+    category: "Comerciales",
+    image: kiosk,
+    description: "Ubicado en Jockey Plaza, se destaca por su diseño moderno y funcional, con una estética urbana que combina estructura metálica, superficies limpias y una fuerte identidad visual de marca.",
+    badge: "Render 3D"
   },
   {
     id: 5,
