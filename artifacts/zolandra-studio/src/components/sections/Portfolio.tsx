@@ -92,7 +92,7 @@ export default function Portfolio() {
         >
           <h2 className="font-sans text-sm tracking-widest text-primary uppercase mb-4">Trabajos Seleccionados</h2>
           <h3 className="font-serif text-4xl md:text-5xl font-medium text-foreground mb-10">
-            Espacios diseñados para vivir
+            Diseños con propósito
           </h3>
 
           <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-12">

@@ -51,8 +51,9 @@ export default function Hero() {
             Zolandra Studio
           </p>
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl leading-[1.1] mb-8 font-medium tracking-tight">
-            Espacios que se sienten <br className="hidden md:block" />
-            como <span className="italic font-light">hogar</span>.
+            Cada espacio que diseñamos <br className="hidden md:block" />
+            está hecho para convertirse <br className="hidden md:block" />
+            en una <span className="italic font-light">experiencia</span>.
           </h1>
           <p className="text-lg md:text-xl text-white/90 font-sans max-w-xl leading-relaxed mb-10 font-light">
             Diseño intencional en la intersección de la calidez y la elegancia. 

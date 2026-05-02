@@ -34,26 +34,23 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="max-w-xl"
           >
-            <h2 className="font-sans text-sm tracking-widest text-primary uppercase mb-4">Sobre mí</h2>
+            <h2 className="font-sans text-sm tracking-widest text-primary uppercase mb-4">Sobre nosotras</h2>
             <h3 className="font-serif text-4xl md:text-5xl font-medium text-foreground mb-8 leading-tight">
-              Diseñando para la vida, <br /> no solo para lucir.
+              Diseñamos con propósito. <br /> Creamos experiencias para la vida.
             </h3>
             
             <div className="flex flex-col gap-6 text-foreground/80 font-sans text-lg leading-relaxed">
               <p>
-                Hola, soy Zolandra. Creo que nuestros espacios moldean profundamente cómo nos sentimos, pensamos y vivimos. Mi enfoque del diseño de interiores se basa en la filosofía de que un hogar debe ser tu santuario: un lugar de calma intencional.
+                En Zolandra Studio creemos que los espacios no solo se ven, se sienten. Influyen en tu energía, en tu calma y en la forma en que vives cada día.
               </p>
               <p>
-                Cada proyecto que emprendo es profundamente personal. No creo showrooms rígidos; construyo hogares reales llenos de luz, materiales naturales y espacio para respirar. Combino tonos cálidos y terrosos con texturas orgánicas para crear ambientes que se sienten pausados y táctiles.
-              </p>
-              <p>
-                Ya sea un loft soleado o un rincón acogedor de lectura, mi objetivo siempre es el mismo: diseñar espacios con confianza tranquila en los que simplemente quieras quedarte.
+                Por eso diseñamos interiores únicos, creativos y funcionales, pensados para tu bienestar. Combinamos estética y sensibilidad para crear ambientes que conecten contigo, que fluyan y que se conviertan en parte de tu vida.
               </p>
             </div>
 
             <div className="mt-12 pt-8 border-t border-border flex items-center gap-8">
               <div>
-                <p className="font-serif text-4xl text-primary mb-1">10+</p>
+                <p className="font-serif text-4xl text-primary mb-1">5</p>
                 <p className="font-sans text-sm uppercase tracking-wider text-muted-foreground">Años de experiencia</p>
               </div>
               <div>
