@@ -9,7 +9,7 @@ import port4 from "@assets/portfolio-4.png";
 import port5 from "@assets/portfolio-5.png";
 import port6 from "@assets/portfolio-6.png";
 
-type Category = "All" | "Bedrooms" | "Living Rooms" | "Small Spaces";
+type Category = "Todo" | "Dormitorios" | "Salas de estar" | "Espacios pequeños";
 
 interface Project {
   id: number;
@@ -17,67 +17,67 @@ interface Project {
   category: Category;
   image: string;
   description: string;
-  badge: "3D Render" | "Before & After";
+  badge: "Render 3D" | "Antes & Después";
 }
 
 const projects: Project[] = [
   {
     id: 1,
-    title: "Warm Minimalist Haven",
-    category: "Bedrooms",
+    title: "Refugio Minimalista Cálido",
+    category: "Dormitorios",
     image: port1,
-    description: "A serene bedroom featuring linen curtains, earthy tones, and abundant natural light.",
-    badge: "3D Render"
+    description: "Un dormitorio sereno con cortinas de lino, tonos terrosos y abundante luz natural.",
+    badge: "Render 3D"
   },
   {
     id: 2,
-    title: "Earthy Open Living",
-    category: "Living Rooms",
+    title: "Sala Abierta y Terrenal",
+    category: "Salas de estar",
     image: port2,
-    description: "An airy living room anchored by a warm wood table and olive green organic textures.",
-    badge: "Before & After"
+    description: "Una sala luminosa anclada por una mesa de madera cálida y texturas orgánicas verde oliva.",
+    badge: "Antes & Después"
   },
   {
     id: 3,
-    title: "Cozy Reading Nook",
-    category: "Small Spaces",
+    title: "Rincón Acogedor de Lectura",
+    category: "Espacios pequeños",
     image: port3,
-    description: "Intentional calm in a small footprint, with natural materials and thoughtful lighting.",
-    badge: "3D Render"
+    description: "Calma intencional en un espacio pequeño, con materiales naturales e iluminación pensada.",
+    badge: "Render 3D"
   },
   {
     id: 4,
-    title: "Serene Master Suite",
-    category: "Bedrooms",
+    title: "Suite Principal Serena",
+    category: "Dormitorios",
     image: port4,
-    description: "Neutral tones and soft bedding combined in an organic modern aesthetic.",
-    badge: "Before & After"
+    description: "Tonos neutros y ropa de cama suave combinados en una estética moderna y orgánica.",
+    badge: "Antes & Después"
   },
   {
     id: 5,
-    title: "Functional Stone Living",
-    category: "Living Rooms",
+    title: "Sala de Piedra Funcional",
+    category: "Salas de estar",
     image: port5,
-    description: "Open plan living area utilizing warm stone colors and elegant, practical furniture.",
-    badge: "3D Render"
+    description: "Sala de planta abierta con colores cálidos de piedra y mobiliario elegante y práctico.",
+    badge: "Render 3D"
   },
   {
     id: 6,
-    title: "Sunlit Loft Studio",
-    category: "Small Spaces",
+    title: "Estudio Loft Iluminado",
+    category: "Espacios pequeños",
     image: port6,
-    description: "An unhurried vibe with tactile materials and quiet confidence for a creative workspace.",
-    badge: "3D Render"
+    description: "Un ambiente pausado con materiales táctiles y confianza tranquila para un espacio creativo.",
+    badge: "Render 3D"
   }
 ];
 
-const categories: Category[] = ["All", "Bedrooms", "Living Rooms", "Small Spaces"];
+const categories: Category[] = ["Todo", "Dormitorios", "Salas de estar", "Espacios pequeños"];
 
 export default function Portfolio() {
-  const [activeCategory, setActiveCategory] = useState<Category>("All");
+  const [activeCategory, setActiveCategory] = useState<Category>("Todo");
 
   const filteredProjects = projects.filter(
-    (p) => activeCategory === "All" || p.category === activeCategory
+    (p) => activeCategory === "Todo" || p.category === activeCategory
   );
 
   return (
@@ -90,9 +90,9 @@ export default function Portfolio() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="font-sans text-sm tracking-widest text-primary uppercase mb-4">Selected Work</h2>
+          <h2 className="font-sans text-sm tracking-widest text-primary uppercase mb-4">Trabajos Seleccionados</h2>
           <h3 className="font-serif text-4xl md:text-5xl font-medium text-foreground mb-10">
-            Spaces designed for living
+            Espacios diseñados para vivir
           </h3>
 
           <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-12">

@@ -3,21 +3,21 @@ import { motion } from "framer-motion";
 const testimonials = [
   {
     id: 1,
-    quote: "Zolandra completely transformed our living room. It went from a cold, disjointed space into a warm, inviting heart of our home. Her eye for natural materials is unmatched.",
-    author: "Sarah & Mark",
-    location: "Austin, TX"
+    quote: "Zolandra transformó completamente nuestra sala de estar. Pasó de ser un espacio frío y desconectado a convertirse en el corazón cálido y acogedor de nuestro hogar. Su ojo para los materiales naturales no tiene comparación.",
+    author: "Sara y Marcos",
+    location: "Bogotá, Colombia"
   },
   {
     id: 2,
-    quote: "I've never felt so at peace in my own bedroom until Zolandra redesigned it. It feels like a boutique hotel, yet entirely personal. The intentional calm she creates is real.",
-    author: "Elena Rodriguez",
-    location: "Miami, FL"
+    quote: "Nunca me había sentido tan en paz en mi propio dormitorio hasta que Zolandra lo rediseñó. Se siente como un hotel boutique, pero totalmente personal. La calma intencional que crea es real.",
+    author: "Elena Rodríguez",
+    location: "Ciudad de México, México"
   },
   {
     id: 3,
-    quote: "Working with Zolandra was a dream. She listened to our needs and created a functional layout that finally makes our small apartment breathe.",
-    author: "David Chen",
-    location: "Brooklyn, NY"
+    quote: "Trabajar con Zolandra fue un sueño. Escuchó nuestras necesidades y creó un diseño funcional que por fin hace que nuestro pequeño apartamento respire.",
+    author: "David Chávez",
+    location: "Buenos Aires, Argentina"
   }
 ];
 
@@ -35,9 +35,9 @@ export default function Testimonials() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="font-sans text-sm tracking-widest text-primary uppercase mb-4">Client Stories</h2>
+          <h2 className="font-sans text-sm tracking-widest text-primary uppercase mb-4">Historias de Clientes</h2>
           <h3 className="font-serif text-4xl md:text-5xl font-medium text-foreground mb-6">
-            Words of warmth
+            Palabras de calidez
           </h3>
         </motion.div>
 

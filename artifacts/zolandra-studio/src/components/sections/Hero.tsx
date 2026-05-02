@@ -51,12 +51,12 @@ export default function Hero() {
             Zolandra Studio
           </p>
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl leading-[1.1] mb-8 font-medium tracking-tight">
-            Spaces that feel <br className="hidden md:block" />
-            like <span className="italic font-light">home</span>.
+            Espacios que se sienten <br className="hidden md:block" />
+            como <span className="italic font-light">hogar</span>.
           </h1>
           <p className="text-lg md:text-xl text-white/90 font-sans max-w-xl leading-relaxed mb-10 font-light">
-            Intentional design living at the intersection of warmth and elegance. 
-            We create natural, fresh, and functional interiors that breathe.
+            Diseño intencional en la intersección de la calidez y la elegancia. 
+            Creamos interiores naturales, frescos y funcionales que respiran.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button 
@@ -65,7 +65,7 @@ export default function Hero() {
               onClick={(e) => handleScrollTo(e, "#portfolio")}
               data-testid="button-hero-portfolio"
             >
-              View Portfolio
+              Ver Portafolio
             </Button>
             <Button 
               size="lg" 
@@ -74,7 +74,7 @@ export default function Hero() {
               onClick={(e) => handleScrollTo(e, "#contact")}
               data-testid="button-hero-contact"
             >
-              Book Consultation
+              Reservar Consulta
             </Button>
           </div>
         </motion.div>
@@ -86,7 +86,7 @@ export default function Hero() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 1 }}
       >
-        <span className="text-white/60 text-xs uppercase tracking-widest font-sans">Scroll</span>
+        <span className="text-white/60 text-xs uppercase tracking-widest font-sans">Desliza</span>
         <div className="w-[1px] h-12 bg-white/20 relative overflow-hidden">
           <motion.div 
             className="absolute top-0 left-0 w-full h-1/2 bg-white"

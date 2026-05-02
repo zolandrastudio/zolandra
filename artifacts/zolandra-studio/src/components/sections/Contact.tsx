@@ -18,9 +18,9 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
 const formSchema = z.object({
-  name: z.string().min(2, "Name must be at least 2 characters."),
-  email: z.string().email("Please enter a valid email address."),
-  message: z.string().min(10, "Message must be at least 10 characters."),
+  name: z.string().min(2, "El nombre debe tener al menos 2 caracteres."),
+  email: z.string().email("Por favor ingresa un correo electrónico válido."),
+  message: z.string().min(10, "El mensaje debe tener al menos 10 caracteres."),
 });
 
 type FormValues = z.infer<typeof formSchema>;
@@ -38,8 +38,8 @@ export default function Contact() {
   function onSubmit(data: FormValues) {
     // Simulate API call
     setTimeout(() => {
-      toast.success("Message sent successfully!", {
-        description: `Thank you, ${data.name}. I'll get back to you shortly.`,
+      toast.success("¡Mensaje enviado con éxito!", {
+        description: `Gracias, ${data.name}. Me pondré en contacto contigo pronto.`,
       });
       form.reset();
     }, 500);
@@ -56,24 +56,24 @@ export default function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="font-sans text-sm tracking-widest text-primary uppercase mb-4">Get in Touch</h2>
+            <h2 className="font-sans text-sm tracking-widest text-primary uppercase mb-4">Escríbeme</h2>
             <h3 className="font-serif text-4xl md:text-5xl font-medium text-foreground mb-6">
-              Let's create your sanctuary
+              Creemos tu santuario juntos
             </h3>
             <p className="text-foreground/70 font-sans text-lg mb-12 max-w-md leading-relaxed">
-              Whether you're looking for a full home redesign or a single room refresh, I'd love to hear about your project.
+              Ya sea que busques rediseñar toda tu casa o renovar una sola habitación, me encantaría conocer tu proyecto.
             </p>
 
             <div className="space-y-8 font-sans">
               <div>
-                <p className="text-xs uppercase tracking-widest text-muted-foreground mb-1">Email</p>
+                <p className="text-xs uppercase tracking-widest text-muted-foreground mb-1">Correo</p>
                 <a href="mailto:hola@zolandra.studio" className="text-lg font-medium hover:text-primary transition-colors">
                   hola@zolandra.studio
                 </a>
               </div>
               
               <div>
-                <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3">Social</p>
+                <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3">Redes sociales</p>
                 <div className="flex gap-4">
                   <a href="https://instagram.com/zolandra.studio" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full border border-border flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all" data-testid="link-instagram-contact">
                     <FaInstagram size={20} />
@@ -103,9 +103,9 @@ export default function Contact() {
                   name="name"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-sans uppercase text-xs tracking-wider">Name</FormLabel>
+                      <FormLabel className="font-sans uppercase text-xs tracking-wider">Nombre</FormLabel>
                       <FormControl>
-                        <Input placeholder="Your name" className="bg-background border-border rounded-none focus-visible:ring-primary focus-visible:border-primary" {...field} data-testid="input-name" />
+                        <Input placeholder="Tu nombre" className="bg-background border-border rounded-none focus-visible:ring-primary focus-visible:border-primary" {...field} data-testid="input-name" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -116,9 +116,9 @@ export default function Contact() {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-sans uppercase text-xs tracking-wider">Email</FormLabel>
+                      <FormLabel className="font-sans uppercase text-xs tracking-wider">Correo</FormLabel>
                       <FormControl>
-                        <Input placeholder="your@email.com" className="bg-background border-border rounded-none focus-visible:ring-primary focus-visible:border-primary" {...field} data-testid="input-email" />
+                        <Input placeholder="tu@correo.com" className="bg-background border-border rounded-none focus-visible:ring-primary focus-visible:border-primary" {...field} data-testid="input-email" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -129,10 +129,10 @@ export default function Contact() {
                   name="message"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-sans uppercase text-xs tracking-wider">Message</FormLabel>
+                      <FormLabel className="font-sans uppercase text-xs tracking-wider">Mensaje</FormLabel>
                       <FormControl>
                         <Textarea 
-                          placeholder="Tell me about your space..." 
+                          placeholder="Cuéntame sobre tu espacio..." 
                           className="min-h-[150px] bg-background border-border rounded-none focus-visible:ring-primary focus-visible:border-primary resize-none" 
                           {...field} 
                           data-testid="input-message"
@@ -143,7 +143,7 @@ export default function Contact() {
                   )}
                 />
                 <Button type="submit" className="w-full rounded-none bg-foreground hover:bg-primary py-6 text-base mt-4" data-testid="button-submit-contact">
-                  Send Message
+                  Enviar Mensaje
                 </Button>
               </form>
             </Form>

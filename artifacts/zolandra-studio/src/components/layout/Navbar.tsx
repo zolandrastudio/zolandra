@@ -4,10 +4,10 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
-  { name: "About", href: "#about" },
-  { name: "Portfolio", href: "#portfolio" },
-  { name: "Services", href: "#services" },
-  { name: "Tips", href: "#blog" },
+  { name: "Sobre mí", href: "#about" },
+  { name: "Portafolio", href: "#portfolio" },
+  { name: "Servicios", href: "#services" },
+  { name: "Consejos", href: "#blog" },
 ];
 
 export default function Navbar() {
@@ -70,7 +70,7 @@ export default function Navbar() {
             onClick={(e) => handleScrollTo(e as any, "#contact")}
             data-testid="button-nav-contact"
           >
-            Contact Me
+            Contáctame
           </Button>
         </nav>
 
@@ -111,7 +111,7 @@ export default function Navbar() {
                   className="mt-4 rounded-full px-8 bg-primary text-primary-foreground"
                   onClick={(e) => handleScrollTo(e as any, "#contact")}
                 >
-                  Contact Me
+                  Contáctame
                 </Button>
               </li>
             </ul>

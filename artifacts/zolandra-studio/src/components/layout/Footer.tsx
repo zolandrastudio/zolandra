@@ -20,7 +20,7 @@ export default function Footer() {
           <div>
             <h2 className="font-serif text-3xl font-medium mb-4 text-background">Zolandra Studio</h2>
             <p className="text-background/70 max-w-sm font-sans leading-relaxed mb-6">
-              Creating comfortable, aesthetic, and deeply livable spaces filled with light, natural materials, and intentional calm.
+              Creando espacios cómodos, estéticos y profundamente habitables llenos de luz, materiales naturales y calma intencional.
             </p>
             <div className="flex gap-4">
               <a href="https://instagram.com/zolandra.studio" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center text-background hover:bg-primary hover:text-primary-foreground transition-all" data-testid="link-instagram-footer">
@@ -36,16 +36,21 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-serif text-xl mb-6 text-background">Navigation</h3>
+            <h3 className="font-serif text-xl mb-6 text-background">Navegación</h3>
             <ul className="flex flex-col gap-3">
-              {['About', 'Portfolio', 'Services', 'Blog'].map((item) => (
-                <li key={item}>
+              {[
+                { label: 'Sobre mí', href: 'about' },
+                { label: 'Portafolio', href: 'portfolio' },
+                { label: 'Servicios', href: 'services' },
+                { label: 'Blog', href: 'blog' }
+              ].map((item) => (
+                <li key={item.href}>
                   <a 
-                    href={`#${item.toLowerCase()}`} 
-                    onClick={(e) => handleScrollTo(e, `#${item.toLowerCase()}`)}
+                    href={`#${item.href}`} 
+                    onClick={(e) => handleScrollTo(e, `#${item.href}`)}
                     className="text-background/70 hover:text-primary transition-colors text-sm uppercase tracking-wider"
                   >
-                    {item}
+                    {item.label}
                   </a>
                 </li>
               ))}
@@ -53,19 +58,19 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-serif text-xl mb-6 text-background">Contact</h3>
+            <h3 className="font-serif text-xl mb-6 text-background">Contacto</h3>
             <ul className="flex flex-col gap-3 text-background/70 font-sans">
               <li>hola@zolandra.studio</li>
-              <li>Available worldwide for remote styling.</li>
-              <li>Based in warmth and elegance.</li>
+              <li>Disponible en todo el mundo para estilismo remoto.</li>
+              <li>Basada en calidez y elegancia.</li>
             </ul>
           </div>
 
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-between text-background/50 text-xs tracking-wider uppercase font-sans">
-          <p>&copy; {currentYear} Zolandra Studio. All rights reserved.</p>
-          <p className="mt-2 md:mt-0">Designed with intention.</p>
+          <p>&copy; {currentYear} Zolandra Studio. Todos los derechos reservados.</p>
+          <p className="mt-2 md:mt-0">Diseñado con intención.</p>
         </div>
       </div>
     </footer>

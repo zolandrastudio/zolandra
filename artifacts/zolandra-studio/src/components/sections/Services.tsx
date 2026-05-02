@@ -13,24 +13,24 @@ import {
 const services = [
   {
     id: "3d-design",
-    title: "3D Design & Visualization",
+    title: "Diseño 3D y Visualización",
     icon: <Cuboid className="w-8 h-8 mb-6 text-primary" strokeWidth={1.5} />,
-    description: "Experience your new space before construction begins. High-quality, photorealistic 3D renders that capture light, texture, and flow.",
-    price: "From $800 / room"
+    description: "Experimenta tu nuevo espacio antes de comenzar la construcción. Renders 3D fotorrealistas de alta calidad que capturan la luz, la textura y el flujo.",
+    price: "Desde $800 / habitación"
   },
   {
     id: "space-planning",
-    title: "Space Planning",
+    title: "Planificación de Espacios",
     icon: <Grid2X2 className="w-8 h-8 mb-6 text-primary" strokeWidth={1.5} />,
-    description: "Optimizing the layout of your home for maximum functionality and breathing room. Focus on natural flow and intentional calm.",
-    price: "From $400 / room"
+    description: "Optimización del diseño de tu hogar para máxima funcionalidad y espacio para respirar. Enfoque en el flujo natural y la calma intencional.",
+    price: "Desde $400 / habitación"
   },
   {
     id: "interior-styling",
-    title: "Interior Styling",
+    title: "Estilismo de Interiores",
     icon: <Paintbrush className="w-8 h-8 mb-6 text-primary" strokeWidth={1.5} />,
-    description: "The final layer. Curating furniture, textiles, art, and natural materials to create a deeply personal, tactile environment.",
-    price: "Custom Quote"
+    description: "La capa final. Selección de muebles, textiles, arte y materiales naturales para crear un entorno profundamente personal y táctil.",
+    price: "Cotización personalizada"
   }
 ];
 
@@ -67,12 +67,12 @@ export default function Services() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="font-sans text-sm tracking-widest text-primary uppercase mb-4">My Approach</h2>
+            <h2 className="font-sans text-sm tracking-widest text-primary uppercase mb-4">Mi Enfoque</h2>
             <h3 className="font-serif text-4xl md:text-5xl font-medium text-foreground mb-6">
-              Services tailored to your home
+              Servicios adaptados a tu hogar
             </h3>
             <p className="text-foreground/70 font-sans text-lg">
-              Comprehensive design solutions that transform houses into warm, livable sanctuaries.
+              Soluciones de diseño integrales que transforman casas en santuarios cálidos y habitables.
             </p>
           </motion.div>
         </div>
@@ -106,7 +106,7 @@ export default function Services() {
                     onClick={(e) => handleScrollTo(e, "#contact")}
                     data-testid={`button-service-${service.id}`}
                   >
-                    Request a Quote
+                    Solicitar Cotización
                   </Button>
                 </CardFooter>
               </Card>
@@ -127,7 +127,7 @@ export default function Services() {
             onClick={(e) => handleScrollTo(e, "#contact")}
             data-testid="button-schedule-consultation"
           >
-            Schedule a Consultation
+            Agendar una Consulta
           </Button>
         </motion.div>
       </div>

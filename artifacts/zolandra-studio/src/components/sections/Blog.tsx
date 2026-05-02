@@ -6,24 +6,24 @@ import blog3 from "@assets/blog-3.png";
 const articles = [
   {
     id: 1,
-    title: "How to Make a Small Room Feel Larger",
-    excerpt: "Clever layout adjustments, mirror placements, and color palette choices to maximize your breathing space.",
+    title: "Cómo hacer que un cuarto pequeño se sienta más grande",
+    excerpt: "Ajustes de distribución inteligentes, colocación de espejos y paletas de colores para maximizar tu espacio de respiración.",
     image: blog1,
-    date: "Oct 12, 2023"
+    date: "12 Oct, 2023"
   },
   {
     id: 2,
-    title: "Choosing Natural Materials for Your Home",
-    excerpt: "Why wood grain, linen, and stone textures are essential for creating an unhurried, tactile environment.",
+    title: "Cómo elegir materiales naturales para tu hogar",
+    excerpt: "Por qué la madera, el lino y las texturas de piedra son esenciales para crear un ambiente pausado y táctil.",
     image: blog2,
-    date: "Nov 05, 2023"
+    date: "05 Nov, 2023"
   },
   {
     id: 3,
-    title: "The Power of Lighting in Interior Design",
-    excerpt: "Layering ambient, task, and accent lighting to create a warm, inviting glow that shifts with the time of day.",
+    title: "El poder de la iluminación en el diseño de interiores",
+    excerpt: "Capas de iluminación ambiental, funcional y de acento para crear un resplandor cálido que cambia con la hora del día.",
     image: blog3,
-    date: "Jan 18, 2024"
+    date: "18 Ene, 2024"
   }
 ];
 
@@ -38,9 +38,9 @@ export default function Blog() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="font-sans text-sm tracking-widest text-primary uppercase mb-4">Design Journal</h2>
+            <h2 className="font-sans text-sm tracking-widest text-primary uppercase mb-4">Diario de Diseño</h2>
             <h3 className="font-serif text-4xl md:text-5xl font-medium text-foreground">
-              Tips for a livable space
+              Consejos para un espacio habitable
             </h3>
           </motion.div>
           
@@ -52,7 +52,7 @@ export default function Blog() {
             href="#blog"
             className="font-sans text-sm font-medium uppercase tracking-wider text-primary hover:text-foreground transition-colors pb-1 border-b border-primary hover:border-foreground"
           >
-            View all articles
+            Ver todos los artículos
           </motion.a>
         </div>
 
@@ -85,7 +85,7 @@ export default function Blog() {
                   {article.excerpt}
                 </p>
                 <span className="text-primary text-sm font-sans font-medium hover:underline underline-offset-4">
-                  Read more
+                  Leer más
                 </span>
               </div>
             </motion.article>
