@@ -1,0 +1,62 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "5WoQJv6iji44ZlqhGxm2w"
+uri = "file://attached_assets/zolandra-portrait.png"
+type = "image"
+title = "Zolandra portrait"
+
+[[generated]]
+id = "uf04cAp3VPd9tWT9GP4Nx"
+uri = "file://attached_assets/portfolio-1.png"
+type = "image"
+title = "Warm minimalist bedroom"
+
+[[generated]]
+id = "HMktwwfo-bYBRrVhlgIZ-"
+uri = "file://attached_assets/portfolio-2.png"
+type = "image"
+title = "Earthy living room"
+
+[[generated]]
+id = "ibNotCc6sqxFyUjdNu4JO"
+uri = "file://attached_assets/portfolio-3.png"
+type = "image"
+title = "Small space reading nook"
+
+[[generated]]
+id = "zahE_SdZ2sxU3wqJ8MIu7"
+uri = "file://attached_assets/portfolio-4.png"
+type = "image"
+title = "Serene master bedroom"
+
+[[generated]]
+id = "8RqXEB6UueJc48XCfIoZl"
+uri = "file://attached_assets/portfolio-5.png"
+type = "image"
+title = "Open plan living area"
+
+[[generated]]
+id = "xtdHeNL2yk3TANkWQVbI7"
+uri = "file://attached_assets/portfolio-6.png"
+type = "image"
+title = "Sunlit loft space"
+
+[[generated]]
+id = "oQaA4BHAnDu8E-UnhvoJ-"
+uri = "file://attached_assets/blog-1.png"
+type = "image"
+title = "Small room feeling larger"
+
+[[generated]]
+id = "VyXKI4evrGOUWppBith5l"
+uri = "file://attached_assets/blog-2.png"
+type = "image"
+title = "Natural materials close up"
+
+[[generated]]
+id = "lvmyd61LBfsEi7a4Dlr-H"
+uri = "file://attached_assets/blog-3.png"
+type = "image"
+title = "Power of lighting"
