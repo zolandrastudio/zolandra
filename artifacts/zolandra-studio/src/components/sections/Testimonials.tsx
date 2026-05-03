@@ -3,21 +3,21 @@ import { motion } from "framer-motion";
 const testimonials = [
   {
     id: 1,
-    quote: "Zolandra transformó completamente nuestra sala de estar. Pasó de ser un espacio frío y desconectado a convertirse en el corazón cálido y acogedor de nuestro hogar. Su ojo para los materiales naturales no tiene comparación.",
-    author: "Sara y Marcos",
-    location: "Bogotá, Colombia"
+    quote: "Trabajar con Zolandra Studio fue una experiencia muy especial. Tenía la idea de abrir mi propia cafetería, Sweet Valentines, y ellas me ayudaron a darle forma en un espacio funcional y acogedor. Entendieron lo que buscaba y me guiaron en todo el proceso. Quedé muy feliz con el resultado.",
+    author: "Roxana",
+    location: "Lima, Perú"
   },
   {
     id: 2,
-    quote: "Nunca me había sentido tan en paz en mi propio dormitorio hasta que Zolandra lo rediseñó. Se siente como un hotel boutique, pero totalmente personal. La calma intencional que crea es real.",
-    author: "Elena Rodríguez",
-    location: "Ciudad de México, México"
+    quote: "Después de la cafetería, decidimos trabajar con ellas en el cuarto de mi hija. Lograron crear un espacio más organizado, cómodo y perfectamente adaptado a su edad. Se nota que escuchan y prestan atención a cada detalle.",
+    author: "Roxana",
+    location: "Lima, Perú"
   },
   {
     id: 3,
-    quote: "Trabajar con Zolandra fue un sueño. Escuchó nuestras necesidades y creó un diseño funcional que por fin hace que nuestro pequeño apartamento respire.",
-    author: "David Chávez",
-    location: "Buenos Aires, Argentina"
+    quote: "Trabajar con Zolandra Studio me ayudó a organizar mejor mi negocio. Diseñaron muebles y soluciones de almacenamiento que hicieron que todo se viera más ordenado y estético. Quedé muy contenta con el resultado porque ahora el espacio es más práctico y agradable.",
+    author: "Ariana",
+    location: "Lima, Perú"
   }
 ];
 
