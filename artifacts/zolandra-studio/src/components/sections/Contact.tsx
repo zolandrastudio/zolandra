@@ -81,7 +81,7 @@ export default function Contact() {
                   <a href="https://www.tiktok.com/@zolandra.studio?is_from_webapp=1&sender_device=pc" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full border border-border flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all" data-testid="link-tiktok-contact">
                     <FaTiktok size={20} />
                   </a>
-                  <a href="https://wa.me/" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full border border-border flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all" data-testid="link-whatsapp-contact">
+                  <a href="https://wa.me/51943161522" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full border border-border flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all" data-testid="link-whatsapp-contact">
                     <FaWhatsapp size={20} />
                   </a>
                 </div>
