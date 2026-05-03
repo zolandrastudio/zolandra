@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import blog1 from "@assets/1d46bbcc-1148-437e-953a-d76b3efee9f5_1777799298220.jpeg";
 import blog2 from "@assets/00a939a2-5023-4420-a09b-028020c2927d_1777799362946.jpeg";
-import blog3 from "@assets/blog-3.png";
+import blog3 from "@assets/1b64c3df-ad41-460d-9472-3fb244e1042b_1777799404048.jpeg";
 
 const articles = [
   {
