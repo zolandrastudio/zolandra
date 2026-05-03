@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { toast } from "sonner";
-import { FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaTiktok, FaWhatsapp, FaFacebook } from "react-icons/fa";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -83,6 +83,9 @@ export default function Contact() {
                   </a>
                   <a href="https://wa.me/51943161522" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full border border-border flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all" data-testid="link-whatsapp-contact">
                     <FaWhatsapp size={20} />
+                  </a>
+                  <a href="https://www.facebook.com/profile.php/?id=61581331391570" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full border border-border flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all" data-testid="link-facebook-contact">
+                    <FaFacebook size={20} />
                   </a>
                 </div>
               </div>

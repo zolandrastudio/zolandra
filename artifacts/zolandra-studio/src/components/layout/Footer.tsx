@@ -1,4 +1,4 @@
-import { FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaTiktok, FaWhatsapp, FaFacebook } from "react-icons/fa";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -31,6 +31,9 @@ export default function Footer() {
               </a>
               <a href="https://wa.me/51943161522" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center text-background hover:bg-primary hover:text-primary-foreground transition-all" data-testid="link-whatsapp-footer">
                 <FaWhatsapp size={18} />
+              </a>
+              <a href="https://www.facebook.com/profile.php/?id=61581331391570" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center text-background hover:bg-primary hover:text-primary-foreground transition-all" data-testid="link-facebook-footer">
+                <FaFacebook size={18} />
               </a>
             </div>
           </div>
