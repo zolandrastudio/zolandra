@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import blog1 from "@assets/blog-1.png";
+import blog1 from "@assets/1d46bbcc-1148-437e-953a-d76b3efee9f5_1777799298220.jpeg";
 import blog2 from "@assets/blog-2.png";
 import blog3 from "@assets/blog-3.png";
 
