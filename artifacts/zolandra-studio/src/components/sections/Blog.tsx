@@ -6,24 +6,27 @@ import blog3 from "@assets/blog-3.png";
 const articles = [
   {
     id: 1,
-    title: "Cómo hacer que un cuarto pequeño se sienta más grande",
-    excerpt: "Ajustes de distribución inteligentes, colocación de espejos y paletas de colores para maximizar tu espacio de respiración.",
+    tag: "Espacios pequeños",
+    title: "Cómo hacer que un espacio pequeño se sienta más grande",
+    body: "Un espacio pequeño no tiene por qué sentirse limitado. La clave está en la distribución y en cómo permites que el espacio 'respire'. Elige mobiliario proporcional, deja áreas de circulación despejadas y utiliza colores claros o tonos neutros para ampliar visualmente el ambiente. Los espejos también ayudan a reflejar la luz y crear sensación de amplitud. Pequeños cambios pueden transformar por completo cómo percibes tu espacio.",
     image: blog1,
-    date: "12 Oct, 2023"
+    date: "1 Mayo, 2026"
   },
   {
     id: 2,
-    title: "Cómo elegir materiales naturales para tu hogar",
-    excerpt: "Por qué la madera, el lino y las texturas de piedra son esenciales para crear un ambiente pausado y táctil.",
+    tag: "Materiales naturales",
+    title: "La importancia de la iluminación natural",
+    body: "La luz natural no solo ilumina, también transforma la energía de un espacio. Un ambiente bien iluminado se percibe más abierto, limpio y acogedor. Evita bloquear las ventanas, usa cortinas ligeras y complementa la luz con materiales naturales que la reflejen suavemente. Diseñar con luz es diseñar con vida.",
     image: blog2,
-    date: "05 Nov, 2023"
+    date: "3 Marzo, 2026"
   },
   {
     id: 3,
-    title: "El poder de la iluminación en el diseño de interiores",
-    excerpt: "Capas de iluminación ambiental, funcional y de acento para crear un resplandor cálido que cambia con la hora del día.",
+    tag: "Poder de la iluminación",
+    title: "Crear espacios que transmitan calma",
+    body: "Un espacio armonioso influye directamente en cómo te sientes. Para lograrlo, es importante reducir el exceso visual y elegir los elementos con intención. Incorpora texturas suaves, colores cálidos y materiales naturales. Mantén la decoración simple pero significativa. Un espacio en calma no está sobrecargado, está equilibrado.",
     image: blog3,
-    date: "18 Ene, 2024"
+    date: "15 Enero, 2025"
   }
 ];
 
@@ -40,7 +43,7 @@ export default function Blog() {
           >
             <h2 className="font-sans text-sm tracking-widest text-primary uppercase mb-4">Diario de Diseño</h2>
             <h3 className="font-serif text-4xl md:text-5xl font-medium text-foreground">
-              Consejos para un espacio habitable
+              Consejos que debes tener en cuenta para tu espacio
             </h3>
           </motion.div>
           
@@ -75,18 +78,20 @@ export default function Blog() {
                 />
               </div>
               <div>
-                <p className="text-muted-foreground text-xs font-sans tracking-widest uppercase mb-3">
-                  {article.date}
-                </p>
+                <div className="flex items-center gap-3 mb-3">
+                  <p className="text-muted-foreground text-xs font-sans tracking-widest uppercase">
+                    {article.date}
+                  </p>
+                  <span className="text-xs font-sans text-primary/80 bg-primary/10 px-2 py-0.5 rounded-full">
+                    {article.tag}
+                  </span>
+                </div>
                 <h4 className="font-serif text-2xl font-medium text-foreground mb-3 group-hover:text-primary transition-colors">
                   {article.title}
                 </h4>
-                <p className="text-foreground/70 font-sans text-sm leading-relaxed mb-4">
-                  {article.excerpt}
+                <p className="text-foreground/70 font-sans text-sm leading-relaxed">
+                  {article.body}
                 </p>
-                <span className="text-primary text-sm font-sans font-medium hover:underline underline-offset-4">
-                  Leer más
-                </span>
               </div>
             </motion.article>
           ))}
