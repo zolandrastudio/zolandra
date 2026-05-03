@@ -26,7 +26,7 @@ export default function Footer() {
               <a href="https://www.instagram.com/zolandra.studio?igsh=ZTlkMGhhbGY0ODAy" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center text-background hover:bg-primary hover:text-primary-foreground transition-all" data-testid="link-instagram-footer">
                 <FaInstagram size={18} />
               </a>
-              <a href="https://tiktok.com/@zolandra6" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center text-background hover:bg-primary hover:text-primary-foreground transition-all" data-testid="link-tiktok-footer">
+              <a href="https://www.tiktok.com/@zolandra.studio?is_from_webapp=1&sender_device=pc" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center text-background hover:bg-primary hover:text-primary-foreground transition-all" data-testid="link-tiktok-footer">
                 <FaTiktok size={18} />
               </a>
               <a href="https://wa.me/" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center text-background hover:bg-primary hover:text-primary-foreground transition-all" data-testid="link-whatsapp-footer">
