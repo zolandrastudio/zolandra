@@ -75,7 +75,7 @@ export default function Contact() {
               <div>
                 <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3">Redes sociales</p>
                 <div className="flex gap-4">
-                  <a href="https://instagram.com/zolandra.studio" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full border border-border flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all" data-testid="link-instagram-contact">
+                  <a href="https://www.instagram.com/zolandra.studio?igsh=ZTlkMGhhbGY0ODAy" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full border border-border flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all" data-testid="link-instagram-contact">
                     <FaInstagram size={20} />
                   </a>
                   <a href="https://tiktok.com/@zolandra6" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full border border-border flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all" data-testid="link-tiktok-contact">

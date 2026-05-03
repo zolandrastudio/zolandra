@@ -23,7 +23,7 @@ export default function Footer() {
               Creando espacios cómodos, estéticos y profundamente habitables llenos de luz, materiales naturales y calma intencional.
             </p>
             <div className="flex gap-4">
-              <a href="https://instagram.com/zolandra.studio" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center text-background hover:bg-primary hover:text-primary-foreground transition-all" data-testid="link-instagram-footer">
+              <a href="https://www.instagram.com/zolandra.studio?igsh=ZTlkMGhhbGY0ODAy" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center text-background hover:bg-primary hover:text-primary-foreground transition-all" data-testid="link-instagram-footer">
                 <FaInstagram size={18} />
               </a>
               <a href="https://tiktok.com/@zolandra6" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center text-background hover:bg-primary hover:text-primary-foreground transition-all" data-testid="link-tiktok-footer">
