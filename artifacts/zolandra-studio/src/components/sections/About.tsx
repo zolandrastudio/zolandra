@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import portraitImg from "@assets/zolandra-portrait.png";
+import portraitImg from "@assets/fbaf303b-4078-488e-a00c-49f7f3b82450_1777798792007.jpeg";
 
 export default function About() {
   return (
