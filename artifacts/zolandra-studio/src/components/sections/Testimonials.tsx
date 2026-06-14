@@ -35,10 +35,10 @@ export default function Testimonials() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="font-sans text-sm tracking-widest text-primary uppercase mb-4">Historias de Clientes</h2>
-          <h3 className="font-serif text-4xl md:text-5xl font-medium text-foreground mb-6">
+          <p className="font-sans text-sm tracking-widest text-primary uppercase mb-4">Historias de Clientes</p>
+          <h2 className="font-serif text-4xl md:text-5xl font-medium text-foreground mb-6">
             Palabras de calidez
-          </h3>
+          </h2>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">

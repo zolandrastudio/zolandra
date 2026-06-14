@@ -3,6 +3,15 @@ import { useRef } from "react";
 import heroImg from "@assets/portfolio-5.png";
 import { Button } from "@/components/ui/button";
 
+function handleScrollTo(e: React.MouseEvent<HTMLAnchorElement>, href: string) {
+  e.preventDefault();
+  const element = document.querySelector(href);
+  if (element) {
+    const top = element.getBoundingClientRect().top + window.scrollY - 80;
+    window.scrollTo({ top, behavior: "smooth" });
+  }
+}
+
 export default function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -12,15 +21,6 @@ export default function Hero() {
 
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
-
-  const handleScrollTo = (e: React.MouseEvent<HTMLButtonElement>, href: string) => {
-    e.preventDefault();
-    const element = document.querySelector(href);
-    if (element) {
-      const top = element.getBoundingClientRect().top + window.scrollY - 80;
-      window.scrollTo({ top, behavior: "smooth" });
-    }
-  };
 
   return (
     <section 
@@ -60,22 +60,26 @@ export default function Hero() {
             Creamos interiores naturales, frescos y funcionales que respiran.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button 
+            <Button
+              asChild
               size="lg" 
               className="rounded-full bg-white text-foreground hover:bg-primary hover:text-white border-0 px-8 py-6 text-base shadow-lg transition-all duration-500"
-              onClick={(e) => handleScrollTo(e, "#portfolio")}
               data-testid="button-hero-portfolio"
             >
-              Ver Portafolio
+              <a href="#portfolio" onClick={(e) => handleScrollTo(e, "#portfolio")}>
+                Ver Portafolio
+              </a>
             </Button>
             <Button 
+              asChild
               size="lg" 
               variant="outline"
               className="rounded-full border-white/40 text-white hover:bg-white/10 hover:text-white px-8 py-6 text-base backdrop-blur-sm transition-all duration-500"
-              onClick={(e) => handleScrollTo(e, "#contact")}
               data-testid="button-hero-contact"
             >
-              Reservar Consulta
+              <a href="#contact" onClick={(e) => handleScrollTo(e, "#contact")}>
+                Reservar Consulta
+              </a>
             </Button>
           </div>
         </motion.div>

@@ -34,10 +34,10 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="max-w-xl"
           >
-            <h2 className="font-sans text-sm tracking-widest text-primary uppercase mb-4">Sobre nosotras</h2>
-            <h3 className="font-serif text-4xl md:text-5xl font-medium text-foreground mb-8 leading-tight">
+            <p className="font-sans text-sm tracking-widest text-primary uppercase mb-4">Sobre nosotras</p>
+            <h2 className="font-serif text-4xl md:text-5xl font-medium text-foreground mb-8 leading-tight">
               Diseñamos con propósito. <br /> Creamos experiencias para la vida.
-            </h3>
+            </h2>
             
             <div className="flex flex-col gap-6 text-foreground/80 font-sans text-lg leading-relaxed">
               <p>

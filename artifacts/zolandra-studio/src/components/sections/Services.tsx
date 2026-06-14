@@ -80,16 +80,16 @@ const itemVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
 };
 
-export default function Services() {
-  const handleScrollTo = (e: React.MouseEvent<HTMLButtonElement>, href: string) => {
-    e.preventDefault();
-    const element = document.querySelector(href);
-    if (element) {
-      const top = element.getBoundingClientRect().top + window.scrollY - 80;
-      window.scrollTo({ top, behavior: "smooth" });
-    }
-  };
+function handleScrollTo(e: React.MouseEvent<HTMLAnchorElement>, href: string) {
+  e.preventDefault();
+  const element = document.querySelector(href);
+  if (element) {
+    const top = element.getBoundingClientRect().top + window.scrollY - 80;
+    window.scrollTo({ top, behavior: "smooth" });
+  }
+}
 
+export default function Services() {
   return (
     <section id="services" className="py-24 md:py-32 bg-background border-y border-border">
       <div className="container mx-auto px-6 md:px-12">
@@ -100,10 +100,10 @@ export default function Services() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="font-sans text-sm tracking-widest text-primary uppercase mb-4">Nuestros Servicios</h2>
-            <h3 className="font-serif text-4xl md:text-5xl font-medium text-foreground mb-6">
+            <p className="font-sans text-sm tracking-widest text-primary uppercase mb-4">Nuestros Servicios</p>
+            <h2 className="font-serif text-4xl md:text-5xl font-medium text-foreground mb-6">
               Servicios adaptados a tu hogar
-            </h3>
+            </h2>
             <p className="text-foreground/70 font-sans text-lg">
               Soluciones de diseño creadas para transformar tu hogar en un espacio funcional, estético y armonioso.
             </p>
@@ -142,12 +142,14 @@ export default function Services() {
                 </CardContent>
                 <CardFooter>
                   <Button
+                    asChild
                     variant="outline"
                     className="w-full border-primary/20 hover:bg-primary hover:text-primary-foreground font-sans transition-colors"
-                    onClick={(e) => handleScrollTo(e, "#contact")}
                     data-testid={`button-service-${service.id}`}
                   >
-                    Solicitar Cotización
+                    <a href="#contact" onClick={(e) => handleScrollTo(e, "#contact")}>
+                      Solicitar Cotización
+                    </a>
                   </Button>
                 </CardFooter>
               </Card>
@@ -163,12 +165,14 @@ export default function Services() {
           className="mt-20 text-center"
         >
           <Button
+            asChild
             size="lg"
             className="rounded-full bg-foreground text-background hover:bg-primary px-8 py-6 text-base"
-            onClick={(e) => handleScrollTo(e, "#contact")}
             data-testid="button-schedule-consultation"
           >
-            Agendar una Consulta
+            <a href="#contact" onClick={(e) => handleScrollTo(e, "#contact")}>
+              Agendar una Consulta
+            </a>
           </Button>
         </motion.div>
       </div>

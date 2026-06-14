@@ -73,6 +73,15 @@ const projects: Project[] = [
 
 const categories: Category[] = ["Todo", "Dormitorios", "Salas de estar", "Espacios pequeños", "Comerciales"];
 
+function handleScrollTo(e: React.MouseEvent<HTMLAnchorElement>, href: string) {
+  e.preventDefault();
+  const element = document.querySelector(href);
+  if (element) {
+    const top = element.getBoundingClientRect().top + window.scrollY - 80;
+    window.scrollTo({ top, behavior: "smooth" });
+  }
+}
+
 export default function Portfolio() {
   const [activeCategory, setActiveCategory] = useState<Category>("Todo");
 
@@ -90,10 +99,10 @@ export default function Portfolio() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="font-sans text-sm tracking-widest text-primary uppercase mb-4">Trabajos Seleccionados</h2>
-          <h3 className="font-serif text-4xl md:text-5xl font-medium text-foreground mb-10">
+          <p className="font-sans text-sm tracking-widest text-primary uppercase mb-4">Trabajos Seleccionados</p>
+          <h2 className="font-serif text-4xl md:text-5xl font-medium text-foreground mb-10">
             Diseños con propósito
-          </h3>
+          </h2>
 
           <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-12">
             {categories.map((category) => (
@@ -123,30 +132,36 @@ export default function Portfolio() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.4 }}
-                className="group relative rounded-sm overflow-hidden bg-card cursor-pointer"
               >
-                <div className="relative aspect-[4/3] overflow-hidden">
-                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
-                  <Badge 
-                    variant="secondary" 
-                    className="absolute top-4 left-4 z-20 bg-background/80 backdrop-blur-sm text-foreground hover:bg-background border-none font-sans font-normal"
-                  >
-                    {project.badge}
-                  </Badge>
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="p-6">
-                  <p className="text-xs uppercase tracking-widest text-primary mb-2 font-sans">{project.category}</p>
-                  <h4 className="font-serif text-2xl font-medium text-foreground mb-3">{project.title}</h4>
-                  <p className="text-foreground/70 font-sans text-sm leading-relaxed">
-                    {project.description}
-                  </p>
-                </div>
+                <a
+                  href="#contact"
+                  onClick={(e) => handleScrollTo(e, "#contact")}
+                  aria-label={`Consultar sobre el proyecto: ${project.title}`}
+                  className="group relative rounded-sm overflow-hidden bg-card block"
+                >
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
+                    <Badge 
+                      variant="secondary" 
+                      className="absolute top-4 left-4 z-20 bg-background/80 backdrop-blur-sm text-foreground hover:bg-background border-none font-sans font-normal"
+                    >
+                      {project.badge}
+                    </Badge>
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <p className="text-xs uppercase tracking-widest text-primary mb-2 font-sans">{project.category}</p>
+                    <h3 className="font-serif text-2xl font-medium text-foreground mb-3">{project.title}</h3>
+                    <p className="text-foreground/70 font-sans text-sm leading-relaxed">
+                      {project.description}
+                    </p>
+                  </div>
+                </a>
               </motion.div>
             ))}
           </AnimatePresence>

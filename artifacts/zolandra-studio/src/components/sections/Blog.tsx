@@ -30,6 +30,15 @@ const articles = [
   }
 ];
 
+function handleScrollTo(e: React.MouseEvent<HTMLAnchorElement>, href: string) {
+  e.preventDefault();
+  const element = document.querySelector(href);
+  if (element) {
+    const top = element.getBoundingClientRect().top + window.scrollY - 80;
+    window.scrollTo({ top, behavior: "smooth" });
+  }
+}
+
 export default function Blog() {
   return (
     <section id="blog" className="py-24 md:py-32 bg-background border-t border-border">
@@ -41,10 +50,10 @@ export default function Blog() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="font-sans text-sm tracking-widest text-primary uppercase mb-4">Diario de Diseño</h2>
-            <h3 className="font-serif text-4xl md:text-5xl font-medium text-foreground">
+            <p className="font-sans text-sm tracking-widest text-primary uppercase mb-4">Diario de Diseño</p>
+            <h2 className="font-serif text-4xl md:text-5xl font-medium text-foreground">
               Consejos que debes tener en cuenta para tu espacio
-            </h3>
+            </h2>
           </motion.div>
           
           <motion.a
@@ -52,48 +61,57 @@ export default function Blog() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            href="#blog"
+            href="#contact"
+            onClick={(e) => handleScrollTo(e, "#contact")}
             className="font-sans text-sm font-medium uppercase tracking-wider text-primary hover:text-foreground transition-colors pb-1 border-b border-primary hover:border-foreground"
           >
-            Ver todos los artículos
+            Solicitar asesoría
           </motion.a>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {articles.map((article, index) => (
-            <motion.article
+            <motion.div
               key={article.id}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="group cursor-pointer"
             >
-              <div className="relative aspect-[16/9] overflow-hidden rounded-sm mb-6 bg-muted">
-                <img 
-                  src={article.image} 
-                  alt={article.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  loading="lazy"
-                />
-              </div>
-              <div>
-                <div className="flex items-center gap-3 mb-3">
-                  <p className="text-muted-foreground text-xs font-sans tracking-widest uppercase">
-                    {article.date}
-                  </p>
-                  <span className="text-xs font-sans text-primary/80 bg-primary/10 px-2 py-0.5 rounded-full">
-                    {article.tag}
-                  </span>
-                </div>
-                <h4 className="font-serif text-2xl font-medium text-foreground mb-3 group-hover:text-primary transition-colors">
-                  {article.title}
-                </h4>
-                <p className="text-foreground/70 font-sans text-sm leading-relaxed">
-                  {article.body}
-                </p>
-              </div>
-            </motion.article>
+              <a
+                href="#contact"
+                onClick={(e) => handleScrollTo(e, "#contact")}
+                aria-label={`Leer más sobre: ${article.title}`}
+                className="group block cursor-pointer"
+              >
+                <article>
+                  <div className="relative aspect-[16/9] overflow-hidden rounded-sm mb-6 bg-muted">
+                    <img 
+                      src={article.image} 
+                      alt={article.title}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-3 mb-3">
+                      <p className="text-muted-foreground text-xs font-sans tracking-widest uppercase">
+                        {article.date}
+                      </p>
+                      <span className="text-xs font-sans text-primary/80 bg-primary/10 px-2 py-0.5 rounded-full">
+                        {article.tag}
+                      </span>
+                    </div>
+                    <h3 className="font-serif text-2xl font-medium text-foreground mb-3 group-hover:text-primary transition-colors">
+                      {article.title}
+                    </h3>
+                    <p className="text-foreground/70 font-sans text-sm leading-relaxed">
+                      {article.body}
+                    </p>
+                  </div>
+                </article>
+              </a>
+            </motion.div>
           ))}
         </div>
       </div>

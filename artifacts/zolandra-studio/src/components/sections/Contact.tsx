@@ -56,10 +56,10 @@ export default function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="font-sans text-sm tracking-widest text-primary uppercase mb-4">Escríbeme</h2>
-            <h3 className="font-serif text-4xl md:text-5xl font-medium text-foreground mb-6">
+            <p className="font-sans text-sm tracking-widest text-primary uppercase mb-4">Escríbeme</p>
+            <h2 className="font-serif text-4xl md:text-5xl font-medium text-foreground mb-6">
               Creemos tu santuario juntos
-            </h3>
+            </h2>
             <p className="text-foreground/70 font-sans text-lg mb-12 max-w-md leading-relaxed">
               Ya sea que busques rediseñar toda tu casa o renovar una sola habitación, me encantaría conocer tu proyecto.
             </p>
