@@ -48,7 +48,7 @@ const services: Service[] = [
   },
   {
     id: "interior-styling",
-    title: "Estilismo de Interiores",
+    title: "Consultoría Personalizada",
     icon: <Paintbrush className="w-8 h-8 mb-6 text-primary" strokeWidth={1.5} />,
     description: "Sesión personalizada donde te ayudo a mejorar tu espacio con recomendaciones prácticas, estéticas y funcionales.",
     includes: [
