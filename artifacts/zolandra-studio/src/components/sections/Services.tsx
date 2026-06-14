@@ -135,9 +135,6 @@ export default function Services() {
                       ))}
                     </ul>
                   </div>
-                  <p className="font-sans font-medium text-primary tracking-wide text-sm uppercase mt-auto">
-                    {service.price}
-                  </p>
                 </CardContent>
                 <CardFooter>
                   <Button
