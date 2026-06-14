@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import heroImg from "@assets/portfolio-5.png";
+import heroImgWebP from "@assets/portfolio-5.webp";
+import heroImgPng from "@assets/portfolio-5.png";
 import { Button } from "@/components/ui/button";
 
 function handleScrollTo(e: React.MouseEvent<HTMLAnchorElement>, href: string) {
@@ -33,11 +34,16 @@ export default function Hero() {
         className="absolute inset-0 z-0 w-full h-full"
       >
         <div className="absolute inset-0 bg-black/20 z-10" />
-        <img 
-          src={heroImg} 
-          alt="Warm elegant living space" 
-          className="w-full h-full object-cover object-center"
-        />
+        <picture>
+          <source srcSet={heroImgWebP} type="image/webp" />
+          <img
+            src={heroImgPng}
+            alt="Warm elegant living space"
+            className="w-full h-full object-cover object-center"
+            fetchPriority="high"
+            decoding="sync"
+          />
+        </picture>
       </motion.div>
 
       <div className="container relative z-20 mx-auto px-6 md:px-12 flex flex-col justify-center h-full pt-20 text-white">
