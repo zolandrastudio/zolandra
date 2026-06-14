@@ -52,12 +52,12 @@ const services: Service[] = [
     icon: <Paintbrush className="w-8 h-8 mb-6 text-primary" strokeWidth={1.5} />,
     description: "Sesión personalizada donde te ayudo a mejorar tu espacio con recomendaciones prácticas, estéticas y funcionales.",
     includes: [
-      "Revisión del espacio (fotos o videollamada)",
-      "Recomendación de estilo y concepto",
-      "Paleta de colores",
+      "Evaluación del espacio (fotos, videollamada o visita)",
+      "Recomendaciones personalizadas de estilo y diseño",
       "Ideas de muebles y decoración",
-      "Sugerencias de distribución (sin plano técnico)",
-      "Preguntas y respuestas en tiempo real",
+      "Sugerencias de distribución (sin planos técnicos)",
+      "Sesión de preguntas y respuestas en vivo",
+      "Moodboard",
     ],
     price: "Desde $35 / $60 por sesión"
   }
