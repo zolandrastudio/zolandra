@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://b0e770bc-0bab-4982-981a-b417975093d2-00-3qcd2bk423b20-j6y3jy4j.picard.replit.dev/sitemap.xml

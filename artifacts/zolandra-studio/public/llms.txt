@@ -1,0 +1,16 @@
+# Zolandra Studio
+
+Zolandra Studio es un estudio de diseño de interiores que transforma hogares en espacios funcionales, estéticos y armoniosos. Combinamos estética y sensibilidad para crear ambientes únicos, creativos y adaptados al bienestar de cada cliente.
+
+## Services
+
+- **Diseño y Planificación** — Consulta personalizada, modelado 3D, renders fotorrealistas, planos de distribución y moodboards para visualizar el espacio antes de hacerlo realidad.
+- **Planificación de Espacios** — Optimización de la distribución para lograr ambientes funcionales, cómodos y adaptados al estilo de vida del cliente.
+- **Consultoría Personalizada** — Recomendaciones de estilo, ideas de muebles y decoración ajustadas a cada proyecto.
+
+## Important URLs
+
+- Homepage: https://b0e770bc-0bab-4982-981a-b417975093d2-00-3qcd2bk423b20-j6y3jy4j.picard.replit.dev/
+- Portfolio: https://b0e770bc-0bab-4982-981a-b417975093d2-00-3qcd2bk423b20-j6y3jy4j.picard.replit.dev/#portfolio
+- Services: https://b0e770bc-0bab-4982-981a-b417975093d2-00-3qcd2bk423b20-j6y3jy4j.picard.replit.dev/#services
+- Contact: https://b0e770bc-0bab-4982-981a-b417975093d2-00-3qcd2bk423b20-j6y3jy4j.picard.replit.dev/#contact
