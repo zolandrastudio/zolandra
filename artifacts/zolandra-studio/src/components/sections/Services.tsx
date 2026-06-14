@@ -25,10 +25,14 @@ const services: Service[] = [
     icon: <Cuboid className="w-8 h-8 mb-6 text-primary" strokeWidth={1.5} />,
     description: "Visualiza tu espacio antes de hacerlo realidad. Creamos renders fotorrealistas que transmiten la esencia, la luz y la atmósfera del diseño.",
     includes: [
-      "Modelado 3D del espacio",
-      "1–2 renders fotorrealistas",
-      "1 plano de distribución básico",
-      "Ajustes según retroalimentación",
+      "Consulta personalizada",
+      "Modelado 3D",
+      "Renders fotorrealistas",
+      "Plano de distribución del espacio",
+      "Moodboard",
+      "Vista en sección de interiores (alturas y detalles de diseño)",
+      "Evaluación del espacio (fotos, videollamada o visita)",
+      "Revisiones según retroalimentación",
     ],
     price: "Desde $180 / $220 por espacio"
   },
