@@ -21,7 +21,7 @@ interface Service {
 const services: Service[] = [
   {
     id: "3d-design",
-    title: "Diseño 3D y Visualización",
+    title: "Diseño y Planificación",
     icon: <Cuboid className="w-8 h-8 mb-6 text-primary" strokeWidth={1.5} />,
     description: "Visualiza tu espacio antes de hacerlo realidad. Creamos renders fotorrealistas que transmiten la esencia, la luz y la atmósfera del diseño.",
     includes: [
