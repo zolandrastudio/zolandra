@@ -38,14 +38,11 @@ const services: Service[] = [
     icon: <Grid2X2 className="w-8 h-8 mb-6 text-primary" strokeWidth={1.5} />,
     description: "Optimización de la distribución para lograr ambientes funcionales, cómodos y adaptados a tu estilo de vida.",
     includes: [
-      "Consulta Personalizada",
-      "Modelado 3D",
-      "Renders Fotorrealistas",
-      "Plano de Distribución del Espacio",
-      "Moodboard",
-      "Sección Interior (Alturas y Detalles de Diseño)",
-      "Evaluación del Espacio (Fotos, Videollamada o Visita)",
-      "Revisiones según Retroalimentación",
+      "Análisis del espacio",
+      "Distribución funcional (plano 2D)",
+      "Zonificación y circulación",
+      "Moodboard (referencia visual)",
+      "Ajuste según retroalimentación",
     ],
     price: "Desde $100 / $150 por espacio"
   },
@@ -55,12 +52,12 @@ const services: Service[] = [
     icon: <Paintbrush className="w-8 h-8 mb-6 text-primary" strokeWidth={1.5} />,
     description: "Sesión personalizada donde te ayudo a mejorar tu espacio con recomendaciones prácticas, estéticas y funcionales.",
     includes: [
-      "Evaluación del Espacio (Fotos, Videollamada o Visita)",
-      "Recomendaciones Personalizadas de Estilo y Diseño",
-      "Ideas de Muebles y Decoración",
-      "Sugerencias de Distribución (Sin Planos Técnicos)",
-      "Sesión de Preguntas y Respuestas en Vivo",
-      "Moodboard",
+      "Revisión del espacio (fotos o videollamada)",
+      "Recomendación de estilo y concepto",
+      "Paleta de colores",
+      "Ideas de muebles y decoración",
+      "Sugerencias de distribución (sin plano técnico)",
+      "Preguntas y respuestas en tiempo real",
     ],
     price: "Desde $35 / $60 por sesión"
   }
