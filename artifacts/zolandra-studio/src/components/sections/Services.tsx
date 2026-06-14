@@ -42,7 +42,6 @@ const services: Service[] = [
       "Distribución funcional (plano 2D)",
       "Zonificación y circulación",
       "Moodboard (referencia visual)",
-      "1 ajuste según retroalimentación",
     ],
     price: "Desde $100 / $150 por espacio"
   },
